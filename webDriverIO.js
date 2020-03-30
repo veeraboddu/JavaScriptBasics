@@ -1,3 +1,7 @@
+//Naveen AutomatioLabs
+//WebDriverIO
+//https://www.youtube.com/watch?v=x29B8Apt2S0&t=984s
+
 // webDriverIO is a openscource framework for the javascript automation. Custom implementation for selenium webdriver API.  
 // webDriverIO is a common framework tool for - Cucumber , Mocha and Jasmine. 
 It is written in javascript and packaged into npm and runs on node js server
@@ -19,3 +23,34 @@ npm install @wdio/cli
 ./node_modules/.bin/wdio config  //WDIO configuration helper // configuring config.js file will be added// wdio.config.js will be added
 npm install chai --save-dev
 npm install chai-webdriverio --save-dev
+//install local runner
+npm install local-runner --save-dev
+// config below changes in - wdio.conf.js file
+
+  beforeTest: function () {
+           const chai = require('chai')
+           const chaiWebdriver = require('chai-webdriverio').default
+           chai.use(chaiWebdriver(browser))
+
+           global.assert = chai.assert
+           global.should = chai.should
+           global.expect = chai.expect
+           
+       },
+
+ example
+element.js
+describe("interacion with web element", function(){
+
+    it("enter value in the field", function(){
+        browser.url('/');
+        const search = $('twotabsearchtextbox');
+        search.setValue('Apple Mac Book');
+    });
+});
+
+download standalone jar and run locally, so script will be run locally bit faster
+cmd: 
+java -jar selenium-server-standalone-3.141.59.jar -port 4545
+
+
