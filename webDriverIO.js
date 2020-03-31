@@ -74,3 +74,10 @@ describe("interacion with web element", function(){
     });
 });
 
+example 2:
+
+const sum  = require('./add')
+
+test('adding of two numbers',() =>{
+    expect(sum(1,2)).toBe(3)
+})
