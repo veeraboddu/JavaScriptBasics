@@ -53,4 +53,24 @@ download standalone jar and run locally, so script will be run locally bit faste
 cmd: 
 java -jar selenium-server-standalone-3.141.59.jar -port 4545
 
+example:
+pageobject model  - <pagename>.js
+class HomePage{
+
+    get pageHeader() {        return $('div>h1')    }    
+    get subHeading() {        return $('div.banner-text-content >p.sub-text')    }
+    get customerlinke(){        return $('/html/body/header/nav/div/div/ul/li[5]/a')    }
+}
+module.exports = new HomePage();  // export the js file
+----------------------
+test - home.test.js
+const homepage = require("../pages/homepage")   // import the file 
+describe("interacion with web element", function(){
+
+    it("enter value in the field", function(){
+        browser.url('https://www.freshworks.com/');
+        let text = homepage.pageHeader.getText();
+        console.log(text);
+    });
+});
 
