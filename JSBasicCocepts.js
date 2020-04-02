@@ -435,3 +435,60 @@ console.log((myJsonobj['desig']));
 
 console.log('-----------------------');
 
+// difference between Var and let .. Var is functional scope , let is block scope. let is introduced newly where as var is very old. 
+// differebce between == and ===  1.both are comparision operators. 2. == it will compare value only 3. === it will compare value & type
+// difference between let and const 1. let use to define the variable 2. const used to define constant values
+// once assign the value to let we can reassign value , where as const we can not reassign the value. 
+const a = [1,2,3]
+a.push(4)  // we can append , but we cannot reassign
+// difference between undefined and null 1. both represent empty value 2. if you define a variable but not assign any thing is undefined
+// 3. if you want to make variable value to null we will assign the null value. 
+// typeof(undefined) => undefined , but typeof(null) => Object
+
+// use of arrow function is also calle fat arrow
+
+const profile ={
+ fistname :''
+ lastname :''
+ setName:function(name){
+ let splitname = function(n){
+ let nameArray = n.split(' ');
+ this.fistname = nameArray[0]
+  this.lastnme = nameArray[1]
+}
+splitName(name);
+}
+}
+profile.setName('veera Boddu')
+console.log(fistname);
+
+
+// fat arrow or arrow function()
+"use strict";   // use the latest functionality and throw the error
+var getA = function (a) {
+return a;
+}
+console.log(getA(100))
+
+var getArrowA = a => a;
+console.log(getArrowA(200))
+
+// we are passing the argument
+//let square = a => a*a;
+let square = (a) => { return a * a }  // correct syntax
+console.log(square(2));
+
+// without passing the argument
+var aa = 4;
+var getSquere = () => {return aa*aa}   // we can put () or _ underscore
+console.log(getSquere());
+
+var xyz = (...nvar) => {
+    console.log(nvar[2])
+};
+console.log(xyz(1,2,3,45))
+
+
+
+
+
