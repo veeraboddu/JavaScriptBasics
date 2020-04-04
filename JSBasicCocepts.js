@@ -436,6 +436,9 @@ console.log((myJsonobj['desig']));
 console.log('-----------------------');
 
 // difference between Var and let .. Var is functional scope , let is block scope. let is introduced newly where as var is very old. 
+// if you declar a var a  inside the block scope ie:if/while/for we can access that variable out side becuase of hosting concept.
+// to avoid that introduced let variable , if we declare inside the block we cannot access outside the block.
+// Hosting concept means while excuting the script js execution eng declare all the block var to the global variables. 
 // differebce between == and ===  1.both are comparision operators. 2. == it will compare value only 3. === it will compare value & type
 // difference between let and const 1. let use to define the variable 2. const used to define constant values
 // once assign the value to let we can reassign value , where as const we can not reassign the value. 
