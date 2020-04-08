@@ -81,3 +81,32 @@ const sum  = require('./add')
 test('adding of two numbers',() =>{
     expect(sum(1,2)).toBe(3)
 })
+
+Node.js
+-------
+  
+ callback model 
+asynchrons calls	
+single treaded model
+as per the applicate node.js is a single threaded application
+But as per the runTime it sits on the C++ platform it might be multithread env
+If multithread env if all the thread r waiting it may block application
+but in single thread in will keep going. 
+
+Node.js shines here:
+Non-blocking
+Event-driven
+Data-intensive
+I/O intensive
+
+Node.js is not good for :
+Data calculations
+Processor intensive
+Blocking operations
+
+good example:
+web servers
+real time servers (web socket connection)
+APIs fronting NoSQL DB
+command line utilities
+Building tooling - written in js
