@@ -52,3 +52,11 @@ importcucumber.api.junit.Cucumber;
 public class Runner 
 {
 }
+
+
+Jbehave is a Automation framework for the BDD
+User three files
+1. story files  - extnesion .story, key words -  given, when and then
+2. step defination  - java file 
+3. Mapping  - java class but extends from 'JunitStories'
+reporting
