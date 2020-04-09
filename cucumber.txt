@@ -4,7 +4,7 @@ When
 Then
 And
 
-a. cucumber supports  Java, .Net, Ruby
+a. cucumber supports  Java, .Net, Ruby(developed bt using RUBY programming lang)
 Q. Example
 Feature: Login to the application under test.
 Scenario: Login to the application.
