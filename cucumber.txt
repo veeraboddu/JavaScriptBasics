@@ -48,7 +48,8 @@ importcucumber.api.CucumberOptions;
 importcucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class) 
-@CucumberOptions(features="Features",glue={"StepDefinition"}) 
+@CucumberOptions(features="Features",glue={"StepDefinition"}, plugin = { “pretty” },monochrome = true ) // pretty to report
+// monochrome is default is false then console output is not readable if true then it is readable
 public class Runner 
 {
 }
