@@ -61,3 +61,23 @@ User three files
 2. step defination  - java file 
 3. Mapping  - java class but extends from 'JunitStories'
 reporting
+
+Maven 
+------
+Maven commands
+mvn clean install
+mvn compile
+mvn test  // go to pom.xml location and then type mvn test to execute/ run 
+
+1. Maven is a project management tool based on POM (project object model) it is used project build , denpencey and documentation
+it is simple build process
+2. Maven eliminates the adding dependent jar to the project
+3. it creates the project structure
+4. building and deploying the project 
+5. generating the source code
+6. compile the source code
+7. packages compiles the code into JAR of ZIP file
+8. 3 type of repository are there
+   1. local repository  // means .m2 folder into in our local system
+   2. Central repository  // it is located in the web it has been created by apache maven community itself
+   3. Remote Repository  // community specific library or custom library.
