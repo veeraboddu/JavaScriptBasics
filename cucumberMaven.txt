@@ -81,3 +81,19 @@ it is simple build process
    1. local repository  // means .m2 folder into in our local system
    2. Central repository  // it is located in the web it has been created by apache maven community itself
    3. Remote Repository  // community specific library or custom library.
+   
+Jenkins
+-----------
+1. Jenkins is Continues integration server
+2. java -jar jenkins.war // to start the jenkins
+3. http://localhost:8080   // on browse jenkins server will be there
+4. Start . Create a new job - click on create a new job
+5. item name : <project name>  - build a free style software project
+6. choose the source code git - copy the source url and paste - check valid or not
+7. Add a build step to invoke Ant - default targe - no target is needed
+8. publish junit test result report - test report xmls - test*.xml  // test results are place
+9. click okay/save
+10  Now run left panel - by click on build now
+11. it will show the test results
+12. you can view the console the log info
+13. you can view the failure scenarios etc. 
